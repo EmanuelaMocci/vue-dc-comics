@@ -1,9 +1,31 @@
 <template>
     <div class="componente2">
         <div class="contenitore-centrale">
-            <div v-for="(item, index) in menu" :key="index">
-                <img src="" alt="">
+            <div class="img">
+                <img src="@/assets/img/buy-comics-digital-comics.png" alt="">
+                <span>DIGITAL COMINCS</span>
             </div>
+
+            <div class="img">
+                <img src="@/assets/img/buy-comics-merchandise.png" alt="">
+                <span>DC MERCHANDISE</span>
+            </div>
+
+            <div class="img">
+                <img src="@/assets/img/buy-comics-subscriptions.png" alt="">
+                <span>SUBSCRIPTION</span>
+            </div>
+            
+            <div class="img">
+                <img src="@/assets/img/buy-comics-shop-locator.png" alt="">
+                <span>COMIC SHOP LOCATOR</span>
+            </div>
+
+            <div class="img">
+                <img src="@/assets/img/buy-dc-power-visa.svg" alt="">
+                <span>DC POWER VISA</span>
+            </div>
+            
         </div>
      
     </div>
@@ -21,31 +43,26 @@ export default {
         background-color: #0082F9;
         height: 150px;
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        
 
         .contenitore-centrale{
+            margin: 0 1000px;
             display: flex;
-            max-width: 70%;
             margin: auto;
 
-            
             .img{
                 display: flex;
                 align-items: center;
 
                 img{
-                    height: 50px;
+                    height: 45px;
+                    padding: 0 20px;
                 }
                 span{
                     color: white;
-                    padding-left: 10px;
+                    font-size: 15px;
+                    padding-right: 25px;
                 }
-            }
-            
-            
+            }    
         }
     }
 
