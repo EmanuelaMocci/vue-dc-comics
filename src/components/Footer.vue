@@ -1,7 +1,12 @@
 <template>
     <div class="footer">
-        <img src="@/assets/img/footer-bg.jpg" alt="sfondo footer">
-        <div class="contenitore-centrale"></div>
+        <div class="footer-top">
+             <div class="contenitore-centrale"></div>
+        </div>
+        <div class="footer-bottom">
+
+        </div>
+       
     </div>
     
 </template>
@@ -13,15 +18,21 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.footer{
-    img{
-        width: 100%;
-        height: 500px;
+.footer-top{
+    height: 300px;
+    width: 100%;
+    background-image: url("../assets/img/footer-bg.jpg");
+
+    .contenitore-centrale{
+        max-width: 70%;
+        margin: auto;
     }
 }
-.contenitore-centrale{
-    max-width: 70%;
-    margin: auto;
+
+.footer-bottom{
+    background-color: rgb(48, 48, 48);
+    height: 100px;
 }
+
 
 </style>
