@@ -1,33 +1,85 @@
 <template>
     <div class="header">
-        <div class="logo">
+        <div class="contenitore-centrale">
+            <div class="logo">
             <img src="@/assets/img/dc-logo.png" alt="logo">
         </div>
         <div class="nav">
             <ul>
-                <li><a href="#">CHARACTERS</a></li>
-                <li><a href="#">COMICS</a></li>
-                <li><a href="#">MOVIES</a></li>
-                <li><a href="#">TV</a></li>
-                <li><a href="#">GAMES</a></li>
-                <li><a href="#">COLLECTIBLES</a></li>
-                <li><a href="#">VIDEOS</a></li>
-                <li><a href="#">FANS</a></li>
-                <li><a href="#">NEWS</a></li>
-                <li><a href="#">SHOP</a></li>
+                <li v-for="(item, index) in menu" :key="index">
+                    <a :href="item.url" :class="item.stato == true ? 'active' : '' ">{{item.titolo}}</a>
+                </li>
             </ul>
+        </div>
         </div>
     </div>
 </template>
 
 <script>
 export default {
-    name: 'Header'
+    name: 'Header',
+    data() {
+        return{
+            menu: [
+                {
+                    titolo: 'CHARACTERS',
+                    url:'#',
+                    stato: false, 
+                },
+                {
+                    titolo: 'COMICS',
+                    url:'#',
+                    stato: true, 
+                },
+                {
+                    titolo: 'MOVIES',
+                    url:'#',
+                    stato: false, 
+                },
+                {
+                    titolo: 'TV',
+                    url:'#',
+                    stato: false, 
+                },
+                {
+                    titolo: 'GAMES',
+                    url:'#',
+                    stato: false, 
+                },
+                {
+                    titolo: 'COLLECTIBLES',
+                    url:'#',
+                    stato: false, 
+                },
+                {
+                    titolo: 'VIDEOS',
+                    url:'#',
+                    stato: false, 
+                },
+                {
+                    titolo: 'FANS',
+                    url:'#',
+                    stato: false, 
+                },
+                {
+                    titolo: 'NEWS',
+                    url:'#',
+                    stato: false, 
+                },
+                {
+                    titolo: 'SHOP',
+                    url:'#',
+                    stato: false, 
+                }
+            ]
+        }
+    }
 }
 </script>
 
 <style lang="scss" scoped>
-.header{
+@import "../assets/style/variables";
+.contenitore-centrale{
     max-width: 70%;
     margin: auto;
     display: flex;
@@ -41,7 +93,7 @@ export default {
         li{
             padding-left: 30px;
             list-style: none;
-            
+        
             a{
                 color: black;
                 font-size: 13px;
@@ -49,7 +101,13 @@ export default {
                 font-weight: bold;
                 letter-spacing: 0.7px;
             }
+
+            .active{
+                color: #0082F9;
+                border-bottom: 4px solid #0082F9;
+            }
         }
+        
     }
 }
 </style>
