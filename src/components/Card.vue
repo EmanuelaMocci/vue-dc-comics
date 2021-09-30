@@ -19,7 +19,7 @@ export default {
 
 .cards-container{
     width: calc(100% / 6 - 20px);
-    margin: 0 10px;
+    margin: 20px 10px;
 
     img{
         object-fit: cover;
@@ -30,6 +30,8 @@ export default {
     .titolo{
         width: 170px;
         color: white;
+        text-transform: uppercase;
+        padding-top: 10px;
     }
 }
 </style>

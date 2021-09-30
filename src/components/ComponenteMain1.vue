@@ -2,6 +2,7 @@
 <div class="contenitore-centrale">
     <div class="componente1">
         <Card v-for="(card, index) in cards" :key="index" :element="card"></Card>
+        <button><a href="#">LOAD MORE</a></button>
     </div>
 </div>
 </template>
@@ -98,13 +99,23 @@ export default {
 
 .contenitore-centrale{
             background-color: rgb(35, 35, 35);
-            height: 600px;
     
         .componente1{
             display: flex;
             flex-wrap: wrap;
             max-width: 80%;
             margin: auto;
+            padding-top: 40px
+        }
+        button{
+            background-color: #0082F9;
+            border: none;
+            padding: 12px 55px;
+            margin: 30px auto;
+            a{
+                color: white;
+                text-decoration: none;
+            }
         }
 }
     // .cards-container{
