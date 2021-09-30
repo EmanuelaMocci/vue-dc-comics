@@ -22,7 +22,7 @@
             </div>
 
             <div class="img">
-                <img src="@/assets/img/buy-dc-power-visa.svg" alt="">
+                <img class="visa" src="@/assets/img/buy-dc-power-visa.svg" alt="">
                 <span>DC POWER VISA</span>
             </div>
             
@@ -45,7 +45,6 @@ export default {
         display: flex;
 
         .contenitore-centrale{
-            margin: 0 1000px;
             display: flex;
             margin: auto;
 
@@ -61,6 +60,9 @@ export default {
                     color: white;
                     font-size: 15px;
                     padding-right: 25px;
+                }
+                .visa{
+                    width: 50px;
                 }
             }    
         }
