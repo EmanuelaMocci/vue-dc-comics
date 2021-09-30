@@ -61,7 +61,7 @@ export default {
                     font-size: 15px;
                     padding-right: 25px;
                 }
-                .visa{
+                &:last-child img{
                     width: 50px;
                 }
             }    

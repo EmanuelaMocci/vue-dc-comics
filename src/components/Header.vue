@@ -2,15 +2,15 @@
     <div class="header">
         <div class="contenitore-centrale">
             <div class="logo">
-            <img src="@/assets/img/dc-logo.png" alt="logo">
-        </div>
-        <div class="nav">
-            <ul>
-                <li v-for="(item, index) in menu" :key="index">
-                    <a :href="item.url" :class="item.stato == true ? 'active' : '' ">{{item.titolo}}</a>
-                </li>
-            </ul>
-        </div>
+                <img src="@/assets/img/dc-logo.png" alt="logo">
+            </div>
+            <div class="nav">
+                <ul>
+                    <li v-for="(item, index) in menu" :key="index">
+                        <a :href="item.url" :class="item.stato == true ? 'active' : '' ">{{item.titolo}}</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </template>
@@ -78,14 +78,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/style/variables";
+// @import "../assets/style/variables";
 .contenitore-centrale{
     max-width: 70%;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 15px 0;
 
     ul{
         display: flex;
@@ -100,11 +100,12 @@ export default {
                 text-decoration: none;
                 font-weight: bold;
                 letter-spacing: 0.7px;
+                padding-bottom: 55px;
             }
 
             .active{
                 color: #0082F9;
-                border-bottom: 4px solid #0082F9;
+                border-bottom: 5px solid #0082F9;
             }
         }
         
