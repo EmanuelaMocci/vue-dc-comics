@@ -2,7 +2,7 @@
     <div class="header">
         <div class="contenitore-centrale">
             <div class="logo">
-                <img src="@/assets/img/dc-logo.png" alt="logo">
+                <img src="../assets/img/dc-logo.png" alt="logo">
             </div>
             <div class="nav">
                 <ul>

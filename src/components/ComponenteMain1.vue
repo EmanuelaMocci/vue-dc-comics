@@ -96,16 +96,17 @@ export default {
 
 <style lang="scss" scoped>
 
-.componente1{
-    background-color: rgb(35, 35, 35);
-    height: 600px;
-
-    .contenitore-centrale{
-    max-width: 70%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    }
+.contenitore-centrale{
+            background-color: rgb(35, 35, 35);
+            height: 600px;
+    
+        .componente1{
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 80%;
+            margin: auto;
+        }
+}
     // .cards-container{
     //     width: calc(100% / 6 - 20px);
     //     margin: 50px 10px 0 10px;
@@ -121,7 +122,7 @@ export default {
     //         color: white;
     //     }
     // }
-}
+
 
 
 </style>
