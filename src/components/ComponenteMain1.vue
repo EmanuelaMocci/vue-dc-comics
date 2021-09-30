@@ -1,5 +1,8 @@
 <template>
 <div class="contenitore-centrale">
+    <div class="series">
+        CURRENT SERIES
+    </div>
     <div class="componente1">
         <Card v-for="(card, index) in cards" :key="index" :element="card"></Card>
         <button><a href="#">LOAD MORE</a></button>
@@ -98,7 +101,22 @@ export default {
 <style lang="scss" scoped>
 
 .contenitore-centrale{
-            background-color: rgb(35, 35, 35);
+            background-color: #1C1C1C;
+            position: relative;
+
+        .series{
+            position: absolute;
+            top: -25px;
+            left: 9%;
+            background-color: #0082F9;
+            width: 200px;
+            text-align: center;
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+            padding:  10px 10px;
+
+        }
     
         .componente1{
             display: flex;
