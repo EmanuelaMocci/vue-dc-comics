@@ -2,27 +2,27 @@
     <div class="componente2">
         <div class="contenitore-centrale">
             <div class="img">
-                <img src="@/assets/img/buy-comics-digital-comics.png" alt="">
+                <img src="../assets/img/buy-comics-digital-comics.png" alt="">
                 <span>DIGITAL COMINCS</span>
             </div>
 
             <div class="img">
-                <img src="@/assets/img/buy-comics-merchandise.png" alt="">
+                <img src="../assets/img/buy-comics-merchandise.png" alt="">
                 <span>DC MERCHANDISE</span>
             </div>
 
             <div class="img">
-                <img src="@/assets/img/buy-comics-subscriptions.png" alt="">
+                <img src="../assets/img/buy-comics-subscriptions.png" alt="">
                 <span>SUBSCRIPTION</span>
             </div>
             
             <div class="img">
-                <img src="@/assets/img/buy-comics-shop-locator.png" alt="">
+                <img src="../assets/img/buy-comics-shop-locator.png" alt="">
                 <span>COMIC SHOP LOCATOR</span>
             </div>
 
             <div class="img">
-                <img class="visa" src="@/assets/img/buy-dc-power-visa.svg" alt="">
+                <img class="visa" src="../assets/img/buy-dc-power-visa.svg" alt="">
                 <span>DC POWER VISA</span>
             </div>
             
