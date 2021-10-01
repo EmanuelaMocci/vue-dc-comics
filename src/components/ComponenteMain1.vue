@@ -12,6 +12,7 @@
 
 <script>
 import Card from '../components/Card.vue';
+// import prods from "../data/cards.jason";
 export default {
     name: 'ComponenteMain1',
     components: {

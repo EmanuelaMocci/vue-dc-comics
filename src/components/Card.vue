@@ -11,7 +11,6 @@
 export default {
     name: 'Card',
     props: ['element']
-    
 }
 </script>
 

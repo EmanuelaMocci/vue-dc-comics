@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header/>
-    <Hero/>
+    <Hero :elementHero="require('./assets/img/jumbotron.jpg')"/>
     <main>
        <componenteMain1/>
        <componenteMain2/>
